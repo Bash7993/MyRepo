@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+body {background:indianred;}
+.main {text-align:center;margin:0 auto;width:50%;}
+input[type=submit] {align-content:center;margin: 0 auto;display:block;}
+
+</style>
+</head>
+
+<body>
+<div class="main">
+<h1>Add Services for Patient</h1>
+<h1>-- Add new Service--</h1>
+<form name="add" action="/addService" method="POST">
+<table  border="1" align="center">
+<tr><th colspan="2">Add New Service</th></tr>
+<tr><td>Patient Id</td><td><input type="number" name="patientId" required/></td></tr>
+<tr><td>Service Name</td><td><input type="text" name="serviceName" required/></td></tr>
+<tr><td>Fees </td><td><input type="text" name="fees" required/></td></tr>
+<tr><td colspan="2"><input type="submit" name="submit" value="submit"/></td></tr> 
+</table>
+</form>
+</div>
+</body>
+</html>
