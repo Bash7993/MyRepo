@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Patient</title>
+
+<style>
+body {background:rgb(105, 189, 187);}
+.main {text-align:center;margin:0 auto;width:50%;}
+input[type=submit] {align:center;margin: 0 auto;display:block;}
+
+</style>
+</head>
+<body>
+<div class="main">
+<h1>Welcome to Patient Management App</h1>
+<h1>-- Register new Patient--</h1>
+<form name="add" action="/patient" method="POST">
+<table border="1" align="center" >
+<tr><th colspan="2">Add Patient</th></tr>
+<tr><td>First Name</td><td><input type="text" name="firstName" required/></td></tr>
+<tr><td>Last Name</td><td><input type="text" name="lastName" required/></td></tr>
+<tr><td>Service Name</td><td><input type="text" name="serviceName" required/></td></tr>
+<tr><td>Fees </td><td><input type="text" name="fees" required/></td></tr>
+<tr><td colspan="2"><input type="submit" name="submit" value="submit"/></td></tr> 
+</table>
+</form>
+</div>
+</body>
+</html>
