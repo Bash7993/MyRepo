@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<style>
+span {background-color:white;}
+.main{text-align:center}
+h1{
+	text-decoration:solid underline;
+}
+</style>
+</head>
+
+<body bgcolor="Cerulean Blue" class="main">
+<h1>All Patient Details</h1>
+
+<table border="1" align="center">
+<th>PatientId</th>
+<th>Patient First Name</th>
+<th>Patient Last Name</th>
+<tr th:each="patient: ${patientDtl}" >
+	<td th:text="${patient.patientId}"></td>
+	<td th:text="${patient.firstname}"></td> 
+	<td th:text="${patient.lastname}"></td> 
+	
+</tr>
+</table>
+</body>
+</html>
